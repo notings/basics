@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <style>
+        body {
+            font-size: 0;
+        }
+
+        /* 
+        bfc 能解决：
+            1、垂直元素的外边距合并的问题，给其中一个元素设置display：inline-block
+            2、解决高度塌陷，给塌陷的元素设置overflow：hidden
+         */
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin-bottom: 120px;
+            display: inline-block;
+
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: green;
+            margin-top: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+
+</html>

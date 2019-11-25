@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <!-- <style>
+        写css语法 
+            选择器{属性：属性值;}
+       
+        div {
+            width: 100px;
+            height: 200px;
+            background: red;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+    </style> -->
+    <!-- 
+        <link rel="stylesheet" href="">
+            rel=""-关联作用，表示要引用的文件为样式表
+            href="css样式表的路径"
+     -->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!-- 
+        给div元素设置宽度：100px;height:200px;背景颜色：red;
+
+    样式表分类：
+        1、行内样式（内联样式）
+            直接在标签上添加style属性，style属性的属性值为 css的声明
+            只作用当前的标签
+
+        2、内部样式
+            在head标签里面添加一个style标签，在style标签里面写css语法
+            作用于页面中同类型(标签名一样)的元素（标签）
+
+        3、外部样式
+        方法一：使用link标签
+            1）在css文件夹里面创建一个css文件
+            2）在需要使用css外部样式的HTML文件里面的head位置，用link标签引入css文件
+            3）在css文件里面写书css语法
+            作用：引用外部样式表的html文件
+
+        方法二：使用导入外部样式表的方式 
+            1）在head标签里面添加一个style标签
+            2）然后在style标签里面第一行用@import url(css文件的路径);
+            注意点：@ 和import之间没有空格 ，import 和 url之间必须由空格，url 和 括号之间没有空格
+            例如：@import url(../css/index.css);
+     -->
+    <!-- <div style="width:200px;height:200px;background:red;">1</div> -->
+    <div>2</div>
+    <div>3</div>
+    <p>pp</p>
+    <p></p>
+</body>
+
+</html>

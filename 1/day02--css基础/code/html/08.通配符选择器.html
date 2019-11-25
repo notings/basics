@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* 
+            5、通配符--用 * 作为选择器
+            *{color：red;}
+            匹配到所有的元素，给所有元素都添加字体颜色为红色
+
+            6、群组选择器
+            选择器1,选择器2{}
+            匹配到选择器1 和 选择器2，给选择器1 和选择器2都添加样式
+            选择器 与 选择器 之间用逗号隔开  
+        */
+        /* div {
+            color: red;
+        }
+
+        p {
+            color: red;
+        }
+
+        h2 {
+            color: red;
+        } */
+        /* * {
+            color: red;
+        } */
+
+        /* 
+            只想改变div 和 p 标签的字体颜色
+            不能使用通配符，
+         */
+        div,
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>div</div>
+    <p>ppp</p>
+    <h2>h2h2h</h2>
+    <span>span</span>
+    <a href="">edfcdsvdf</a>
+</body>
+
+</html>

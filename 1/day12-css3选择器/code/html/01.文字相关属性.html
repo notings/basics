@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        div {
+            width: 600px;
+            height: 200px;
+            font-size: 50px;
+            font-weight: 900;
+            border: 1px solid red;
+            box-shadow: 0px 0px 5px 0px #000;
+            /* 
+                文字阴影：
+                text-shadow：
+                    值1[水平方向距离] 值2[垂直方向的距离] 值3[模糊程度] 值4[颜色]；
+                文字描边：
+                -webkit-text-stroke:值1[描边的宽度] 值2[描边的颜色]
+                注意点：必须添加浏览器前缀
+
+                文字排版：
+                direction：ltr[left to right] |rtl[right to left]
+                如果想要实现，文字从右到左，那么必须配合
+                unicode-bidi：bidi-override 属性使用
+
+             */
+            /* text-shadow: 0px 0px 5px red; */
+            -webkit-text-stroke: 2px red;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        市场定位的刺猬的基础。
+    </div>
+
+</body>
+
+</html>

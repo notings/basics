@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* 
+            层次选择器：
+            1、包含选择器： 选择器1[父元素]  选择器2[子元素]{}，样式会作用到子元素
+            2、子代选择器：选择器1[爸爸元素]>选择器2[儿子]{}，
+            3、相邻兄弟选择器：选择器1+选择器2{}，样式作用于选择器2，
+                选择器和选择器2位相邻的兄弟元素
+            4、通用选择器：选择器1~选择器2{}，样式作用于选择器2，
+                能选择器到选择器1 后面所有的选择器2元素
+        
+         */
+        .box .box1 {
+            width: 200px;
+            height: 200px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .nav {
+            overflow: hidden;
+        }
+
+        /*.nav>li 找到.nav下面的一级子元素li */
+        .nav>li {
+            float: left;
+        }
+
+        dl dd {
+            display: none;
+        }
+
+        dl dt:hover~dd {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+        </div>
+    </div>
+
+    <ul class="nav">
+        <li>
+            <a href="">一级导航</a>
+            <ul>
+                <li>二级导航</li>
+                <li>二级导航</li>
+            </ul>
+        </li>
+        <li>
+            <a href="">一级导航</a>
+            <ul>
+                <li>二级导航</li>
+                <li>二级导航</li>
+            </ul>
+        </li>
+    </ul>
+    <dl>
+        <dt>一级导航</dt>
+        <dd>二级导航1</dd>
+        <dd>二级导航2</dd>
+        <dd>二级导航3</dd>
+    </dl>
+    <!-- dl>dt+dd -->
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 500px;
+            height: 100px;
+            border: 1px solid red;
+            display: flex;
+            overflow: auto;
+        }
+
+        .box li {
+            flex-basis: 100px;
+            /* flex: 1; */
+            height: 100px;
+            background: pink;
+            flex-shrink: 0;
+        }
+
+        .box li:nth-child(2) {
+            /* 
+                1、order ---设置子元素排序
+                取值：number（没有单位），默认值为0，值越大元素越在后面
+
+                2、flex-grow---设置子元素放大比列
+                取值：number（没有单位），默认值0（不放大，如果容器还剩余空间也不会方法）
+                例如：
+                .box li:nth-child(1) {
+                    flex-grow: 1;
+                }
+                .box li:nth-child(2) {
+                    flex-grow: 3;
+                }
+                把容器剩余空间分为4分，第一个li占1分，第二个li占3分
+                3、flex-shrink--设置项目的缩小比例
+                取值：number（没有单位），默认值 1（所有项目1:1缩放）
+                如果不想子项目被缩小，那么就设置flex-shrink：0
+
+                4、flex-basis--设置子元素在主轴方向所占据的空间
+                    主轴方向为水平：flex-basis 相当于宽度
+                    主轴方向为垂直：flex-basis 相当于高度
+             */
+            /* order: 1; */
+        }
+
+        .box li:nth-child(1) {
+            /* flex-grow: 1; */
+        }
+
+        .box li:nth-child(2) {
+            /* flex-grow: 3; */
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 10px solid red;
+            padding: 20px;
+            background-image: url(../images/man3-0.jpg);
+            /* 
+                背景图默认从元素的padding位置开始放
+
+                background-origin--设置容器从什么位置开始放背景图
+                取值：
+                    1、border-box---设置从border位置开始放背景图
+                    2、padding-box---设置从padding位置开始放背景图,默认值
+                    3、content-box---从内容区域开始放背景图
+                
+                background-clip---设置背景最终显示在什么区域
+                    1、border-box--设置背景图显示在border以内区域，默认值
+                    2、padding-box---设置背景图显示在padding区域
+                    3、content-box--设置背景图只显示在content区域
+             */
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            /* background-clip: content-box; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

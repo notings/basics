@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* 
+            自适应两栏布局方法：
+            1、使用定位
+                .box {
+                    position: fixed;
+                    top: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    right: 0px;
+                    background: pink;
+                }
+
+                .box .left {
+                    width: 200px;
+                    height: 100%;
+                    background: green;
+                }
+
+                .box .right {
+                    position: absolute;
+                    left: 200px;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    background: #ccc;
+                }
+            2、使用bfc
+                html,
+                body {
+                    height: 100%;
+
+                }
+                .box {
+                    height: 100%;
+                    background: pink;
+                }
+                .box .left {
+                    width: 200px;
+                    height: 100%;
+                    background: #58a;
+                    float: left;
+                }
+                .box .right {
+                    height: 100%;
+                    overflow: hidden;
+                    background: #58bc58;
+                }
+            3、使用calc（+ - * /）函数，计算符号两边必须有空格
+                html,
+                body {
+                    height: 100%;
+
+                }
+
+                .box {
+                    height: 100%;
+                    background: pink;
+                }
+
+                .box .left {
+                    width: 200px;
+                    height: 100%;
+                    background: #58a;
+                    float: left;
+                }
+
+                .box .right {
+                    height: 100%;
+                    width: calc(100% - 200px);
+                    float: right;
+                    background: #58bc58;
+                }
+         */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+
+        }
+
+        .box {
+            height: 100%;
+            background: pink;
+        }
+
+        .box .left {
+            width: 200px;
+            height: 100%;
+            background: #58a;
+            float: left;
+        }
+
+        .box .right {
+            height: 100%;
+            /* overflow: hidden; */
+            width: calc(100% - 200px);
+            float: right;
+            background: #58bc58;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right">dfcdvgfbv</div>
+    </div>
+
+</body>
+
+</html>

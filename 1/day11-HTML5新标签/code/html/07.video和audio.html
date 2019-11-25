@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        视频的两种写法：
+        1、
+        <video src="../images/01.mp4"></video>
+
+        2、
+         <video>
+            <source src="../images/01.mp4">
+        </video>
+        视频的相关属性：
+            1、autoplay---自动播放，谷歌浏览器不支持自动播放
+            2、controls---控制条
+            3、poster---播放之前的封面图
+            4、loop--循环播放
+        
+            音频：audio
+            1、autoplay---自动播放，谷歌浏览器不支持自动播放
+            2、controls---控制条
+            3、loop--循环播放
+
+     -->
+    <video src="../images/01.mp4"></video>
+
+    <video controls poster="../images/动图6.jpg">
+        <source src="../images/01.mp4">
+    </video>
+
+    <audio src="../images/2.mp3" autoplay controls loop></audio>
+
+</body>
+
+</html>

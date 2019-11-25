@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        input {
+            outline: none
+        }
+
+        /* 
+            属性选择器：
+            1、E[attr]----表示匹配到拥有attr属性的E元素
+            2、E[attr="value"]---匹配到拥有attr属性，并且属性值为value的E元素
+            3、E[attr~="value"]----匹配到拥有attr属性，并且属性值拥有 value这个词的E元素
+            4、E[attr^="value"]---匹配到拥有attr属性，并且切属性值以value开头的E元素
+            5、E[attr$="value"]---匹配到拥有attr属性，并且属性值以value 结束的E元素
+            6、E[attr*="value"]----匹配到拥有attr属性，并且属性值中拥有valu的E元素
+            7、E[attr|="value"]----匹配带拥有attr属性，并且属性值只有value 或者 以value- 开头的E元素
+            <div attr="value | value-la"></div>
+        */
+
+        input[type|="text"] {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="">用户名</label>
+        <input type="text dsfd edgfdg">
+        <label for="">密码：</label>
+        <input type="paslsword">
+        <label for="">电话号码</label>
+        <input type="tel">
+        <label for="">邮箱</label>
+        <input type="email">
+
+    </form>
+
+</body>
+
+</html>

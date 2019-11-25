@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        meter {
+            width: 400px;
+            height: 100px;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <progress max="100" value="50"></progress>
+    <br>
+    <br>
+    <!-- 
+        meter 分为 三种颜色：红  黄  绿
+        默认请情况下，值越小越好，呈现绿色
+            max--最大值
+            high---较高值
+            low---较低值
+            min---最低值
+            optimum---最佳值
+            value--当前值
+        当optimum的值在high---max 之间，那么表示值越大越好，value在high 以上就会呈现绿色，在low---high之间呈现黄色，在low以下呈现红色
+        当optimum的值在min--low之间，那么表示值越小越好，value在low以下呈现绿色，在low-high之间呈现换色，在high以上呈现红色
+     -->
+    <meter high="90" max="100" min="0" low="60" value="91" optimum="50"></meter>
+    <!-- 
+        <ruby>
+            婧
+            <rt>jing</rt> //给文字添加音标注释
+        </ruby>
+     -->
+    <ruby>
+        婧
+        <rt>jing</rt>
+    </ruby>
+
+</body>
+
+</html>

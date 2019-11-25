@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" novalidate>
+        <!-- 
+            表单新增属性：
+            1、placeholder---占位符
+            2、autofocus---自动获取焦点
+            3、multiple---上传多个文件或者填写多个邮箱地址
+            4、required---必填项
+            5、pattern---正则验证，输入内容必须要跟正则的表达式格式化一样才会提交
+            6、novalidate---取消验证，一般给form表单添加
+            form表单添加了此属性之后，那么input的所有验证都将失效
+
+         -->
+        <label for="">用户名：</label>
+        <input type="text" placeholder="请输入用户名" autofocus required>
+        <br>
+        <input type="text" placeholder="正则验证" pattern="\d{3}">
+        <!-- <label for="">邮箱：</label> -->
+
+        <!-- <input type="email" multiple>
+        <input type="file" multiple> -->
+
+        <br>
+        <input type="url">
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

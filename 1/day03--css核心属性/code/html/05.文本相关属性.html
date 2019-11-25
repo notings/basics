@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* 
+            文本相关属性：
+            1、文本水平对齐方式
+                text-align:left(左对齐，默认值) | center(居中对齐) | right(右对齐)
+            2、文本的行高
+                line-height：数值 + 单位
+                一行文本所占据的高度，
+                行高 = 文字大小 + 上行间距 + 下行间距
+                上行间距 = 下行间距
+                想要实现一个单行文本在盒子中垂直居中显示，那么只需要讲line-height的值 = height 的值
+            3、行内元素的垂直对齐方式
+                行内元素：元素在同一行排列
+                块级元素：元素独占一行
+                vertical-align:top[顶部对齐] |middle[居中对齐]|baseline[基线对齐]|bottom[底部对齐]
+                注意：必须有两个元素以上才会有对比效果，要对比的元素都必须添加vertical-align属性
+            4、首行缩进
+                text-indent:数值 + 单位（em）
+                em：是一个单位，相对于元素本身字体大小的倍数
+                例如：font-size：20px; 1em = 20px；2em = 40px
+                注意点：text-indent可以取负数
+            5、大小写的转换
+                text-transform:uppercase[把所有英文单词转换为大写] | lowercase[把所有英文单词转换为小写] | capitalize[把首字母变为大写]
+
+            6、文本的修饰
+                text-decoration:none[没有，一般用来清除默认样式] | underline[下划线] | overline[上划线] | line-through[删除线]
+            7、字符间距（在字符与字符之间添加距离）
+                letter-spacing:数值 + 单位
+
+            8、词间距(在词与词之间添加距离)
+                word-spacing：数值 +单位
+                词 以 空格为标识
+         */
+        div {
+            width: 400px;
+            /* height: 400px; */
+            border: 1px solid red;
+            /* text-align: center; */
+        }
+
+        div img {
+            vertical-align: bottom;
+        }
+
+        div span {
+            vertical-align: bottom;
+        }
+
+        .box {
+            width: 600px;
+        }
+
+        .box p {
+            font-size: 20px;
+            text-indent: 2em;
+        }
+
+        h2 {
+            text-transform: capitalize;
+            /* text-decoration: line-through; */
+            /* letter-spacing: 10px; */
+            word-spacing: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>肆无忌惮可是我ID绝对是农村 nihaoma</div>
+    <div>
+        <img src="../images/04.gif" alt="">
+        <span>rgb</span>
+    </div>
+    <div class="box">
+        <p>第一批“不忘初心、牢记使命”主题教育正深入开展。7月15日至16日，习近平总书记到内蒙古就经济社会发展、生态文明建设和开展“不忘初心、牢记使命”主题教育情况进行考察调研。
+        </p>
+        <p>党员活动室，墙上展示着自治区自然资源厅主题教育的安排部署和具体步骤。习近平总书记指出：“学习教育不仅仅是个开始，而是要贯穿始终，通过学习不断深化认识、加深领悟。”</p>
+    </div>
+    <h2>
+        ni hao ma
+    </h2>
+    <a href="">去百度</a>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+/* 
+    通配符--一般用来清除默认样式 ，一定要写在最前面 
+    *{margin: 0;padding: 0;}
+    margin--外边距
+    padding--内边距
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 最外层使用id选择器写样式 
+    #id名
+*/
+
+#wolong {
+    width: 1000px;
+    height: 1500px;
+    background: #ccc;
+
+    /* margin: auto;使最外层的盒子在页面中居中显示 */
+    margin: auto;
+}
+
+/* 
+    里面的模块我们一般用包含选择器写样式
+*/
+#wolong .header {
+    width: 1000px;
+    height: 100px;
+    background: pink;
+}
+
+#wolong .nav {
+    width: 1000px;
+    height: 59px;
+    background: #313131;
+}
+
+#wolong .banner {
+    width: 1000px;
+    height: 463px;
+    /*  background: url(../images/banner.png); 使用图片作为背景
+    元素必须哟宽高
+     */
+    background: url(../images/banner.png);
+}
+
+#wolong .main1 {
+    width: 1000px;
+    height: 240px;
+    background: #58a;
+}
+
+#wolong .main2 {
+    width: 1000px;
+    height: 305px;
+    background: #58bc58;
+}
+
+#wolong .main3 {
+    width: 1000px;
+    height: 250px;
+    background: #ccc;
+}
+
+#wolong .footer {
+    height: 81px;
+    width: 1000px;
+    background: #000;
+}

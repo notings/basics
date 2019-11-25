@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        legend {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        label {
+            text-align: right;
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        fieldset---表单字段集
+        作用：对表单进行分组    
+
+        legend-----字段集标题
+        一定要放在fieldset的第一个子元素
+
+        label---提示信息
+        <label for="input的id名"></label>
+        <input  type="text" id="">
+        label 的for 属性绑定input 的id名，表示把两个关联起来，鼠标点击label的文字可以获取input 的焦点
+
+     -->
+    <fieldset>
+        <form action="">
+            <h2>用户登录</h2>
+            <fieldset>
+                <legend>用户登录</legend>
+                <p>
+                    <label for="username">用户名：</label>
+                    <input type="text" id="username">
+                </p>
+                <p>
+                    <label for="password">密码：</label>
+                    <input type="password" id="password">
+                </p>
+
+
+            </fieldset>
+        </form>
+
+        <form action="">
+            <h2>用户注册</h2>
+            <fieldset>
+                <label for="">输入用户名：</label>
+                <input type="text">
+            </fieldset>
+        </form>
+    </fieldset>
+
+</body>
+
+<script>
+</script>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/样式表的优先级.css">
+    <style>
+        /* 
+            样式表的优先级：
+            行内样式表 > 内部样式表,外部样式表（谁后执行，使用谁的样式）
+
+            HTML执行顺序是从上往下执行，如果代码一样，后面的代码会覆盖前面的代码
+        */
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div style="width:200px;height:200px;background:green;"></div> -->
+    <div>到到底是什么颜色？</div>
+</body>
+
+</html>

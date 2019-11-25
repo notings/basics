@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* 
+            选择器的权重：
+            !important > 内联样式 >  id选择器 > 类选择器(class选择器) > 类型选择器 > 通配符选择器
+            
+            !important 表示最重要的，在属性值后面添加之后，表示这句代码权重最高
+
+            层叠样式表：因为同一个元素可以有多种方法去给他添加样式
+            当同一个元素通过几种方法添加了同样的样式的时候，只能选择其一，就会出现选择器的权重问题
+        
+         */
+        /* #cai {
+            color: blue;
+        }
+
+        .cxk {
+            color: red;
+        }
+
+        div {
+            color: green;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="cxk" id="cai" style="color: chartreuse">鸡你太美</div>
+</body>
+
+</html>

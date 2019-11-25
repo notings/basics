@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        ul {
+            width: 300px;
+            overflow: hidden;
+            margin: 100px auto;
+            /* border-right: 1px solid pink; */
+            border-top: 1px solid pink;
+        }
+
+        ul li {
+            float: left;
+            border-left: 1px solid pink;
+            border-bottom: 1px solid pink;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* 
+            结构伪类选择器：
+            1、E F:first-child{}--表示选择到 E 元素下面的第一个子元素，并且这个元素要为F元素
+            2、E F:last-child{}--表示选择到 E 元素下面中的最后一个子元素，并且这个元素为 F 元素
+            3、E F:nth-child(n)--表示选择到页面中的 第n个子元素，并且这个元素要为F元素
+            4、E F:nth-last-child(n)--表示选择到 E 元素中倒数 di n个子元素，并且这个元素要为 F 元素
+            5、E F:nth-child(2n)--表示选择到 E 元素中的偶数的子元素，并且这写元素要为F元素
+            6、E F:nth-child(2n+1 | 2n-1)--表示选择到 E 元素中的基数的子元素，并且这些元素要为F元素
+            7、E F:nth-child(-n+x)，-n固定写法，x为变量，选择到E 元素下面 第1--x个子元素，并且这些元素  要为F元素
+            8、E F:nth-child(n+x)，n固定写法，x为变量，选择到E 元素中 x以后的所有子元素，并且这些元素要为 F 元素
+            9、E F:nth-of-type(n){}--表示选择到E元素 下面 F元素类型的第 n个
+            10、E F:nth-last-of-type(n){}--表示选择到E元素怒下面 F元素类型的倒数 第 n 个元素
+            11、E F:empty{}--表示选择到E 元素 没有任何内容的F元素
+            12、E F:only-child{}--表示E元素 下面只能有一个子元素，并且这个子元素要为F元素
+            13、E F:only-of-type{}---表示 E元素下面 F类型的元素只能有一个
+
+         */
+
+        ul li:nth-child(3n) {
+            border-right: 1px solid pink;
+        }
+
+        /* ul li:nth-child(-n+6):nth-child(n+4) {
+            background: #58a;
+        } */
+        /* ul li:nth-last-of-type(4) {
+            background: #58a;
+        } */
+
+        ul li:empty {
+            background: red;
+        }
+
+        /* ul li:only-child {
+            background: green;
+        } */
+        div span:only-of-type {
+            color: red;
+        }
+
+        /* 
+            E F:not(.list | #list1){}--表示选择到 E 元素下面 （除了class名为list 或者 id名为list1）所有F元素
+        
+         */
+        ul li:not(#li5) {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <!-- <span></span> -->
+        <li class="list1">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="list5" id="li5">5</li>
+        <li>6</li>
+        <li class="list5">7</li>
+        <li>8</li>
+        <li>9</li>
+        <!-- <span></span> -->
+    </ul>
+    <div>
+        <span>dcvdsvfd</span>
+        <!-- <span>dcvdsvfd</span> -->
+        <h2>dshfoidcdsckdsnvclkfdsvc</h2>
+    </div>
+
+</body>
+
+</html>

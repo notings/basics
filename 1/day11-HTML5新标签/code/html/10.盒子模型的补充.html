@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* 
+            想要实现盒子为 200 * 200
+
+            盒子模型---box-sizing：border-box | content-box
+            1、标准盒子模型：content-box
+                在页面中实际宽高
+                宽度 = content（width）+ 左右padding + 左右border
+                高度 = content（height） + 上下padding + 上下border
+
+            2、ie怪异盒子模型：border-box
+                在页面中实际宽高，不受padding和border所影响
+                宽度 = width
+                高度 = height
+         */
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: 10px solid green;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+</body>
+
+</html>

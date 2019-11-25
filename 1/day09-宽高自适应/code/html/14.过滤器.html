@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            /* height: 200px; */
+            /* 
+                属性过滤器---帮助你解决ie浏览器左兼容
+                    1、_ ： 表示只有ie识别该属性
+                    2、!important :在属性值后面添加，表示最重要的，权重最高，只有ie6浏览器不识别
+                    3、*；在属性前面添加，表示只有ie7 及以下浏览器识别，其他浏览器都不识别
+                    4、\9 :只有ie浏览器识别，其他浏览器都不识别
+                    5、\0 :只有ie浏览器中ie8以上浏览器识别，其他浏览器都不识别
+
+            */
+            background: red \0;
+            font-size: 30px !important;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 20px;">2324</div>
+</body>
+
+</html>

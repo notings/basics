@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* 
+            使用包含选择器的方法给<div class="erzi" id="son"></div>设置宽高和背景颜色
+
+            包含选择器的权重问题：
+            选择器的权重我们使用 0 0 0 0表示
+                内联样式---1000
+                id选择器---0100
+                class选择器---0010
+                类型选择器---0001
+                通配符---0000
+
+                包含选择器权重 = 各个选择器权重之和
+                .fuqin #son  = 10 + 100 = 110
+                .fuqin .erzi = 10 + 10 = 20
+
+                继承：表示子元素可以使用一些父元素的样式
+                注意点：继成的权重是最低的
+         */
+        /* 都是用id选择器 */
+        /* #baba #son {
+            width: 200px;
+            height: 200px;
+            background: green;
+        } */
+
+        /* 使用class 结合 id选择器 */
+        /* .fuqin #son {
+            background: pink;
+        } */
+
+        /* 都用class选择器 */
+        /* .fuqin .erzi {
+            width: 100px;
+            height: 100px;
+            background: red;
+        } */
+        #baba {
+            color: red;
+        }
+
+        * {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fuqin" id="baba">
+        <div class="erzi" id="son">son</div>
+    </div>
+
+</body>
+
+</html>

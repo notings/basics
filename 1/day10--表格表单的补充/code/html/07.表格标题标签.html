@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        table {
+            width: 400px;
+            height: 150px;
+            border: 1px solid red;
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+
+        table tr th {
+            border: 1px solid red;
+        }
+
+        table tr td {
+            border: 1px solid red;
+        }
+
+        caption {
+            caption-side: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        th---------单元格标题
+        caption----表格标题
+        一定要放在table里面的第一行（必须为table的第一个子元素）
+       
+        设置表格标题的位置：
+        caption-side:top|bottom|left| right（left 和 right 只有火狐浏览器识别）
+     -->
+    <table>
+        <caption>成绩单</caption>
+        <tr>
+            <th>姓名</th>
+            <th>语文</th>
+            <th>数学</th>
+            <th>英语</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

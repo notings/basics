@@ -1,0 +1,8 @@
+1、打开git客户端
+2、git clone 仓库复制的链接
+3、cd 仓库的名字
+4、把作业放在本地的仓库中
+5、git add .
+6、git commit -m "备注"
+7、git push origin master
+8、输入GitHub的用户名和密码

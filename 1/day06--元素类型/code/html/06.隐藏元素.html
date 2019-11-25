@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+
+        .box .box1 {
+            width: 100px;
+            height: 100px;
+            background: green;
+
+            /* 
+                display:none 隐藏元素 
+                隐藏之前元素是什么类型的元素，显示就用什么属性值来显示
+                隐藏之前是块级元素，显示就是用display：block
+                隐藏之前是行内元素，显示就用display：inline
+                隐藏图片，显示就display：inline-block
+
+            */
+            display: none;
+        }
+
+        /* 
+            .box .box1:hover -- 鼠标box下面的box1
+            .box:hover .box1 -- 鼠标滑过box的状态 改变box1的样式
+            :hover 前面不能有空格
+            
+         */
+
+        .box:hover .box1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>鼠标滑过box的时候显示box1</h2>
+        <div class="box1">123213</div>
+    </div>
+
+</body>
+
+</html>

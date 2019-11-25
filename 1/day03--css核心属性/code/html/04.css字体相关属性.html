@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        div {
+            /* font-size: 50px; */
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            font-style: italic;
+            font-family: "黑体", "宋体";
+        }
+
+        b {
+            font-weight: 100;
+        }
+
+        i {
+            font-style: normal;
+        }
+
+        p {
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1、字体大小
+            font-size:数值 + 单位（px,rem,em,）
+            默认字体大小为16px
+
+        2、字体颜色
+            color: 颜色
+            颜色的取值：
+            1）颜色的英文单词
+            2）# + 十六进制（0123456789abcdef）
+                颜色的组成：三原色（红，绿，蓝）
+                颜色一般用6位十六进制：00[红] 00[绿] 00[蓝]
+                如果颜色的取值两两相同的时候可以去一个，#ee2233 = #e23
+            3）rgb(red[0-255],green[0-255],blue[0-255])
+
+        3、字体是否加粗
+            font-weight:bold(加粗) | normal(正常) | 100-900[100-500为正常，
+            600-900为加粗，没有单位]
+
+        4、字体是否倾斜
+            font-style:italic(倾斜) |normal(正常)
+        5、字体类型
+            font-family："微软雅黑"--默认字体为微软雅黑
+            注意：如果是中文字体一定要引号
+        6、小型的大写字母
+            font-variant：small-caps
+     -->
+    <div>早，谢老师</div>
+    <!-- 加粗标签：b/strong -->
+    <b>早，谢老师</b>
+    <br>
+    <i>早，谢老师</i>
+    <p>font-variant</p>
+</body>
+
+</html>
